@@ -1,0 +1,212 @@
+/* removing default styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.35s;
+    font-family: "Poppins";
+  }
+  /* adding styling to the body */
+  body {
+    background-color: #e3e9ff;
+    padding: 2rem;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* adding styling to the todo head*/
+  .todo-head {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .editInputStyle {
+    width: 50%;
+  }
+  /* adding styling to the input */
+  #addTaskInput {
+    width: 70%;
+    font-size: 18px;
+    padding: 10px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid gray;
+    margin: 10px;
+  }
+  /* adding styling to the addIcon*/
+  .addIcon {
+    font-size: 25px;
+  }
+  /* adding styling to the todoImg*/
+  .todo-img {
+    width: 50px;
+  }
+  /* styling for the completeTask btn */
+  .completeTask {
+      color: lightgray;
+    text-decoration: line-through;
+  }
+  /* styling the container of the todo */
+  .todo-container {
+    background-color: white;
+    width: 700px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  /* styling the li */
+  li {
+    display: flex;
+    margin: 10px;
+    /* border-bottom: 1px solid gray; */
+    list-style: none;
+    padding: 5px;
+    /* border-radius: 10px; */
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+  }
+  /* styling the li btn container */
+  .todoBtnContainer {
+    display: flex;
+  }
+  /* styling the container of the input field and the add task button */
+  .addInputBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* stying the h1 tag */
+  h1 {
+    margin: 10px;
+  }
+  /* styling the add task button */
+  #addTask {
+    cursor: pointer;
+    width: 30%;
+    padding: 10px;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    outline: none;
+    border: none;
+    background-color: #6c63ff;
+    border-radius: 10px;
+  }
+  /* hover effect on the add task button */
+  #addTask:hover {
+    background-color: #9f9aff;
+  }
+  /* styling for the removebtn */
+  .removeBtn {
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    background-color: rgba(255, 91, 79, 0.89);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* hover effect on the removebtn */
+  .removeBtn:hover {
+    background-color: rgba(255, 73, 73, 0.877);
+    transform: scale(1.1);
+  }
+  /* styling for the completebtn */
+  .completeBtn {
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    margin: 0 10px;
+    background-color: rgb(24, 204, 135);
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+  }
+  /* hover effect on the completebtn */
+  .completeBtn:hover {
+    background-color: rgb(43, 209, 173);
+    transform: scale(1.1);
+  }
+  /* styling for the editbtn */
+  .editBtn {
+    font-size: 25px;
+    width: 45px;
+    height: 45px;
+    background-color: #0d99ff;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+  }
+  /* hover effect on the edit btn */
+  .editBtn:hover {
+    transform: scale(1.1);
+    background-color: #60bdff;
+  }
+  /* media queries for the responsivenes */
+  @media (max-width: 646px) {
+    /* reponsing the body */
+    body {
+      padding: 0;
+      margin: 1rem;
+    }
+    /* reponsing the input field and the add task container */
+    .addInputBox {
+      flex-direction: column;
+      display: flex;
+    }
+    /* reponsing the li */
+    li {
+      margin: 10px 0;
+    }
+    /* reponsing the input field and the add task btn  */
+    #addTaskInput,
+    #addTask {
+      width: 100%;
+    }
+  }
+  @media (max-width: 500px) {
+    /* responsice the li */
+    li {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+    /* responsice the completebtn */
+    .completeBtn {
+      margin: 0 10px;
+    }
+    .completeBtn, .removeBtn, .editBtn {
+      width: 35px;
+      height: 35px;
+    }
+    #addTask, #addTaskInput {
+      font-size: 16px;
+      padding:7px;
+    }
+    #addTask {
+      justify-content: center;
+      align-items: center;
+    }
+    h1 {
+      font-size: 20px;
+    }
+  }
+  
